@@ -1,0 +1,424 @@
+/*-------------------- HEADER SECTION ------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 10rem;
+}
+
+/*-------------------- NAVIGATION SECTION ------------------*/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+
+  /* For color change animation | Always put the property on original state*/
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1c7ed6;
+}
+
+/* Styles for the last navigation link */
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #1c7ed6;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #1c7ed6;
+}
+
+/*-------------------- HERO SECTION ------------------*/
+.section-hero {
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #1c7ed6;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  transition: all 0.3s;
+}
+
+.btn--full:hover,
+.btn--full:active,
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #1864ab;
+  outline: thick solid #74c0fc;
+}
+
+.hero-img {
+  width: 130%;
+}
+
+/* HELPER CLASS TO GIVE SPACE ON THE RIGHT SIDE */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+  /* Important keyword ensures this style is applied */
+}
+
+/*-------------------- LEARN SECTION ---------------*/
+.section-learn {
+  padding: 9.6rem 0;
+}
+
+.learn-box {
+  gap: 12.8rem;
+}
+
+.learn-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.margin-bottom-med {
+  margin-bottom: 4.8rem !important;
+}
+
+.learn-img {
+  width: 100%;
+}
+
+/*-------------------- REGISTRATION SECTION ---------------*/
+.section-register {
+  padding: 9.6rem 0;
+  background-color: #f8f9fa;
+}
+
+.register-heading-box {
+  text-align: center;
+}
+
+.register-steps {
+  column-gap: 3.6rem;
+}
+
+.step-text-box {
+  margin-top: 4.8rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-description {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+
+/*-------------------- FEATURES SECTION ---------------*/
+.section-features {
+  padding: 9.6rem 0;
+}
+
+.features-heading-box {
+  text-align: center;
+}
+
+.features-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.feature-card {
+  display: flex;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.feature-card:first-child {
+  margin-top: 4.8rem;
+}
+
+.icon {
+  font-size: 8.6rem;
+}
+
+.feature-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+/*-------------------- TESTIMONIALS SECTION ---------------*/
+.section-testimonials {
+  padding: 9.6rem 0;
+  background-color: #f8f9fa;
+}
+
+.testimonial-heading-box {
+  text-align: center;
+  /* margin-bottom: 9.6rem !important; */
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.6;
+  margin-top: 4rem;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 4rem;
+
+  margin-top: 4.8rem;
+}
+
+.testimonial-image {
+  width: 14rem;
+  border-radius: 100%;
+  box-shadow: 6px 6px 24px 1px rgb(0 0 0 / 20%);
+}
+
+.testimonial-author {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.location {
+  font-size: 1.6rem;
+}
+
+/*-------------------- Innovation SECTION ---------------*/
+.section-innovation {
+  padding: 9.6rem 0;
+}
+
+.innovation-heading-box {
+  text-align: center;
+}
+
+.innovation-description {
+  font-size: 2rem;
+  line-height: 1.9;
+  margin-top: 4.8rem !important;
+  text-align: center;
+}
+
+.lessonspace-box,
+.classcard-box {
+  margin-top: 8rem !important;
+  gap: 3.6rem;
+}
+
+.lessonspace-description,
+.classcard-description {
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.lesson-space-video {
+  width: 100%;
+  border-radius: 2rem;
+  border: 10px solid #e6e9ec;
+  /* box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.08); */
+  box-shadow: 6px 6px 24px 1px rgb(0 0 0 / 20%);
+}
+
+.lessonspace-video-box {
+  position: relative;
+}
+
+/* .lessonspace-video-box::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  padding: 40%;
+  background-color: #1c7ed6;
+  border-radius: 1rem;
+  z-index: -1;
+} */
+
+.classcard-img-box {
+  display: flex;
+  justify-content: center;
+}
+
+.app-screen {
+  width: 60%;
+}
+
+/*-------------------- PRICING SECTION ---------------*/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-image-cont {
+  display: block;
+  padding: 4.8rem 6rem 4.8rem 0;
+}
+
+.pricing-img {
+  border-radius: 1.2rem;
+  width: 100%;
+}
+
+.pricing-box {
+  grid-column: 2 / -1;
+  align-self: center;
+}
+
+.pricing-text {
+  font-size: 2rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+/*-------------------- JOIN SECTION ---------------*/
+
+.section-joinCC {
+  padding: 9.6rem 0;
+}
+
+.section-joinCC div {
+  background-color: #63e6be;
+  border-radius: 1.2rem;
+  box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.08);
+}
+
+.margin-top-med {
+  margin-top: 4.8rem !important;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2.4rem !important;
+}
+
+.box-shadow {
+  box-shadow: 0 50px 50px 0 rgba(0, 0, 0, 0.08);
+}
+/*-------------------- FOOTER SECTION ---------------*/
+
+.footer {
+  padding: 12.8rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #767676;
+  margin-top: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
